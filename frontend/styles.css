@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.options-container{
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0.25rem;
+}
+
+.tools-container{
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    width: 40vw;
+    position:absolute;
+    left: 30vw;
+    align-items: center;
+}
+
+.tools-container > *{
+    display: block;
+    height: 2rem;
+}
+
+.pencil-tool-container{
+    box-shadow: rgba(151, 151, 151, 0.35) 0px 5px 15px;
+    height:5rem;
+    width: 12rem;
+    border-radius:5px;
+    /* background-color: green; */
+    position: absolute;
+    top:4rem;
+    left:20vw;
+    display: none;
+}
+
+.pencil-width-container{
+    /* background-color: orange; */
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pencil-width-container input{
+    width: 60%;
+}
+
+.pencil-color-container{
+    /* background-color: yellow; */
+    height: calc(100% - 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pencil-color{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.black{
+    background-color: black;
+}
+.white{
+    background-color: lightgray;
+}
+.red{
+    background-color: red;
+}
+.pink{
+    background-color: pink;
+}
+.blue{
+    background-color: blue;
+}
+.lightblue{
+    background-color: lightblue;
+}
+.green{
+    background-color: green;
+}
+.lightgreen{
+    background-color: lightgreen;
+}
+.orange{
+    background-color: orange;
+}
+.yellow{
+    background-color: yellow;
+}
+
+.eraser-tool-container{
+    box-shadow: rgba(151, 151, 151, 0.35) 0px 5px 15px;
+    height: 2rem;
+    width:7rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    left:35vw;
+    display: none;
+}
+
+.eraser-tool-container input{
+    width:80%;
+}
+
+.sticky-container{
+    height:12rem;
+    width:12rem;
+    position: absolute;
+    left: calc(100% - 14rem);
+    top: calc(100% - 14rem);
+}
+
+.header-container{
+    background-color: rgb(158, 101, 26);
+    height:2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-container> *{
+    height:1rem;
+    width: 1rem;
+    border-radius:50%;
+    margin:0.25rem;
+}
+.header-container .minimize{
+    background-color: lime;
+}
+.header-container .remove{
+    background-color:red;
+}
+
+.note-container{
+    height: calc(100% - 2rem);
+    box-shadow: rgba(151, 151, 151, 0.35) 0px 5px 15px;
+}
+
+textarea{
+    height:100%;
+    width:100%;
+    background-color: rgb(252, 252, 176);
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.upload-img{
+    height: 100%;
+    width: 100%;
+}
+
+.dark {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dark button {
+    top: 0;
+    right: 0;
+    height: 4rem;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+}
+
+.dark button img {
+    display: block;
+    height: 2rem;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}

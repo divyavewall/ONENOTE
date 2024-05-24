@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ONENOTE</title>
+</head>
+
+<body>
+    <div class="options-container">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="tools-container">
+        <img class="pencil" src="./images/pencil.png" alt="">
+        <img class="eraser" src="./images/eraser.png" alt="">
+        <img class="stickynote" src="./images/sticky-notes.png" alt="">
+        <img class="undo" src="./images/undo.png" alt="">
+        <img class="redo" src="./images/redo.png" alt="">
+        <img class="upload" src="./images/file.png" alt="">
+        <img class="download" src="./images/download.png" alt="">
+    </div>
+    <div class="pencil-tool-container">
+        <div class="pencil-width-container">
+            <input type="range" min="2" max="10" value="3" class="pencil-width">
+        </div>
+        <div class="pencil-color-container">
+            <div class="black pencil-color"></div>
+            <div class="white pencil-color"></div>
+            <div class="red pencil-color"></div>
+            <div class="pink pencil-color"></div>
+            <div class="blue pencil-color"></div>
+            <div class="lightblue pencil-color"></div>
+            <div class="green pencil-color"></div>
+            <div class="lightgreen pencil-color"></div>
+            <div class="orange pencil-color"></div>
+            <div class="yellow pencil-color"></div>
+        </div>
+    </div>
+    <div class="eraser-tool-container">
+        <input type="range" min="5" max="20" value="10" class="eraser-width">
+    </div>
+    <!-- <div class="sticky-container">
+        <div class="header-container">
+            <div class="minimize"></div>
+            <div class="remove"></div>
+        </div>
+        <div class="note-container">
+            <textarea>Type Here...</textarea>
+        </div>
+    </div> -->
+    <div class="dark">
+        <button onclick="darkmode()">
+            <img id="btn" src="./images/sun.png" />
+        </button>
+    </div>
+    
+    <canvas></canvas>
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" 
+    integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" 
+    crossorigin="anonymous">
+    </script>
+    <script>
+        let socket = io.connect("http://localhost:5000");
+    </script>
+
+    <script src="./tools.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+
+</html>
