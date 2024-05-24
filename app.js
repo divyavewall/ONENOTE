@@ -3,10 +3,10 @@ const socket = require("socket.io");
 
 const app = express();
 app.use(express.static("frontend"));
-const PORT = 5000;
+const port = process.env.PORT || 5000;
 
-const server = app.listen(PORT, () => {
-    console.log(`Server is working on http://localhost:${PORT}`);
+const server = app.listen(port, () => {
+    console.log(`Server is working on http://localhost:${port}`);
 });
 
 let io = socket(server);
