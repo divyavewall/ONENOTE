@@ -2,6 +2,12 @@
 
 This project is a collaborative drawing application that supports real-time drawing synchronization across multiple clients and includes a dark mode feature. Users can draw on a shared canvas, use different tools (pencil, eraser), add sticky notes, upload images, and toggle between light and dark modes.
 
+## DEMO
+
+
+https://github.com/divyavewall/ONENOTE/assets/132549573/685333a8-3bc2-42f9-b577-1db5ed374cae
+
+
 ## Features
 
 - **Real-time Drawing**: Multiple users can draw on the canvas simultaneously.
@@ -80,5 +86,6 @@ Use the undo and redo buttons to revert or reapply changes on the canvas.
 ## Acknowledgements
 
 - Socket.io for real time Communication
-
 - Express for the server framework
+
+
