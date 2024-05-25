@@ -29,8 +29,7 @@ https://github.com/divyavewall/ONENOTE/assets/132549573/685333a8-3bc2-42f9-b577-
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/yourusername/yourrepository.git
-   cd yourrepository
+   https://github.com/divyavewall/ONENOTE.git
 
 2. **Install Dependencies:**
    ```sh
